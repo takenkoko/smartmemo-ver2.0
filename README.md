@@ -25,7 +25,7 @@ DjangoとBootstrapで構築したシンプルなメモアプリです。
 - Responsive UI improvements
 
   ## Ver2.0で追加する機能
-- ナビゲーションバーを追加
+- ナビゲーションバーを追加　完了！
 -  検索機能
 - カテゴリ機能
 - ログイン機能（SQLite ➡　PostgreSQL）
