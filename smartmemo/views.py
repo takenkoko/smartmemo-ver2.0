@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Memo
+from django.db.models import Q
 
 # Create your views here.
 def index(request):
@@ -47,3 +48,20 @@ def delete(request,memo_id):
     memo.delete()
     
     return redirect("index")
+
+#検索機能を作成
+def search(request):
+    keyword = request.GET.get("keyword","")
+
+    memos= Memo.objects.filter(
+        Q(title_icontains=keyword)|
+        Q(content_icontains=keyword)
+    )
+
+    return render(
+        request,
+        "smartmemo/index.html",
+        {
+            "memos":memos
+        }
+    )
