@@ -1,4 +1,4 @@
-# SmartMemo Ver1.0
+# SmartMemo Ver2.0
 
 【アプリのスクリーンショット】
 ![SmartMemo](screenshots/home.png)
@@ -26,7 +26,7 @@ DjangoとBootstrapで構築したシンプルなメモアプリです。
 
   ## Ver2.0で追加する機能
 - ナビゲーションバーを追加　完了！
--  検索機能
+-  検索機能 を追加　完了！
 - カテゴリ機能
 - ログイン機能（SQLite ➡　PostgreSQL）
 
