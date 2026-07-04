@@ -54,8 +54,8 @@ def search(request):
     keyword = request.GET.get("keyword","")
 
     memos= Memo.objects.filter(
-        Q(title_icontains=keyword)|
-        Q(content_icontains=keyword)
+        Q(title__icontains=keyword)|
+        Q(content__icontains=keyword)
     )
 
     return render(
