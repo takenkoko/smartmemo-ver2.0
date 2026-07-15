@@ -77,3 +77,18 @@ def search(request):
             "keyword":keyword,
         }
     )
+
+#カテゴリをクリックすると、そのカテゴリのメモだけを表示する
+def category(request,category_id):
+    category = Category.objects.get(id=category_id)
+
+    memos = Memo.objects.filter(category=category)
+
+    return render(
+        request,
+        "smartmemo/index.html",
+        {
+            "memos":memos,
+            "selected_category":category,
+        }
+    )

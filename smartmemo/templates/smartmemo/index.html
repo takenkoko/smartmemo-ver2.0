@@ -18,9 +18,11 @@ SmartMemo.ver2.0へようこそ!
     <div class="card-body">
 
         {% if memo.category%}
-        <span class="badge bg-primary mb-2">
-            {{ memo.category.name}}
-        </span>
+        <a href="{% url 'category' memo.category.id %}" class="text-decoration-none">
+            <span class="badge bg-primary mb-2">
+                {{ memo.category.name}}
+            </span>
+        </a>
         {% endif %}
 
 
