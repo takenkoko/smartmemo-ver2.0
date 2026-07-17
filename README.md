@@ -1,7 +1,7 @@
 # SmartMemo Ver2.0
 
 【アプリのスクリーンショット】
-![SmartMemo](screenshots/home_sample2.0.png.png)
+![SmartMemo](screenshots/home_sample2.0.png)
 
 DjangoとBootstrapで構築したシンプルなメモアプリです。
 
