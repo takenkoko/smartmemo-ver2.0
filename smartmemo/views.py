@@ -12,6 +12,7 @@ def index(request):
     })
 
 #フォーム作成
+@login_required
 def create(request):
     if request.method=="POST":
         
@@ -37,6 +38,7 @@ def create(request):
                   )
 
 #編集機能を作成
+@login_required
 def edit(request,memo_id):
     memo = Memo.objects.get(id=memo_id)
 
@@ -55,6 +57,7 @@ def edit(request,memo_id):
     })
 
 #削除機能を作成
+@login_required
 def delete(request,memo_id):
     memo=Memo.objects.get(id=memo_id)
 
@@ -63,6 +66,7 @@ def delete(request,memo_id):
     return redirect("index")
 
 #検索機能を作成
+@login_required
 def search(request):
     keyword = request.GET.get("keyword","")
 
@@ -81,6 +85,7 @@ def search(request):
     )
 
 #カテゴリをクリックすると、そのカテゴリのメモだけを表示する
+@login_required
 def category(request,category_id):
     category = Category.objects.get(id=category_id)
 
