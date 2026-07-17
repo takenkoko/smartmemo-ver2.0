@@ -1,8 +1,10 @@
 from django.shortcuts import render,redirect
 from .models import Memo, Category
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required
 def index(request):
     memos=Memo.objects.all()
     return render(request,"smartmemo/index.html",{
