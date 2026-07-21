@@ -1,4 +1,4 @@
-# SmartMemo Ver3.2
+# SmartMemo Ver3.1
 
 【アプリのスクリーンショット】
 
