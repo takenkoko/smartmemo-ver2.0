@@ -1,25 +1,53 @@
 /*============================
-Smartmemo login 画面UIデザインを作成
+Smartmemo メニューバー 画面UIデザインを作成
 =============================*/
 
 body{
     background-color: aliceblue;
 }
-/* */
+/*ナビゲーションバー*/
 .navbar{
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
-/**/
+/*カード*/
 .card{
     border: none;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-/**/
+/*ボタン*/
 .btn{
     border-radius: 10px;
 }
-/**/
-.from-control{
+/*入力フォーム*/
+.form-control{
     border-radius: 10px;
+}
+
+/*============================
+Smartmemo login 画面UIデザインを作成
+=============================*/
+
+/*ログインカード*/
+.login-card{
+    margin-top: 80px;
+    padding: 10px;
+}
+/*タイトル*/
+.login-title{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/*サブタイトル*/
+.login-subtitle{
+    text-align: center;
+    color: gray;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+/*ログインボタン*/
+.btn-login{
+    width: 100%;
+    margin-top: 15px;
 }

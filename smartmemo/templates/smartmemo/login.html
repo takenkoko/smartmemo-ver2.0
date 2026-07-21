@@ -6,16 +6,44 @@
 
 {% block content %}
 
-<h2>ログイン</h2>
+<div class="container">
 
-<form method="post">
-    {% csrf_token %}
+    <div class="row justify-content-center">
 
-   {{ form.as_p}}
+        <div class="col-md-5">
 
-   <button type="submit" class="btn btn-primary">
-    ログイン
-   </button>
-</form>
+            <div class="card login-card">
 
-{% endblock%}
+                <div class="card-body">
+
+                    <h2 class="login-title">
+                        SmartMemo
+                    </h2>
+
+                    <p class="login-subtitle ">
+                        Welcome Back!
+                    </p>
+
+                    <form method="post">
+
+                        {% csrf_token %}
+
+                        {{ form.as_p}}
+
+                        <button type="submit" class="btn btn-primary btn-login">
+                            ログイン
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
