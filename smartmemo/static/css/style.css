@@ -1,0 +1,25 @@
+/*============================
+Smartmemo login 画面UIデザインを作成
+=============================*/
+
+body{
+    background-color: aliceblue;
+}
+/* */
+.navbar{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 15);
+}
+/**/
+.card{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 15);
+}
+/**/
+.btn{
+    border-radius: 10px;
+}
+/**/
+.from-control{
+    border-radius: 10px;
+}
