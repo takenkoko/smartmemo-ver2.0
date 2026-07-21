@@ -3,10 +3,10 @@
 【アプリのスクリーンショット】
 
 - ログイン画面
-![SmartMemo](screenshots/login_sample3.2.png)
+![SmartMemo](screenshots/login_sample3.1.png)
 
 - メイン画面
-![SmartMemo](screenshots/main_home_sample3.2.png)
+![SmartMemo](screenshots/main_home3.1.png)
 
 
 Django・Bootstrap・CSSで構築したシンプルなメモ管理Webアプリです。
