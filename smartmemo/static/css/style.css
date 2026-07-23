@@ -5,10 +5,23 @@ Smartmemo メニューバー 画面UIデザインを作成
 body{
     background-color: aliceblue;
 }
+
 /*ナビゲーションバー*/
 .navbar{
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #1e3a8a !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+} 
+
+.navbar-brand,
+.navbar-nav .nav-link{
+    color: white !important;
+    font-weight: 500;
 }
+
+.navbar-nav .nav-link:hover{
+    color: #dbeafe !important;
+}
+
 /*カード*/
 .card{
     border: none;
