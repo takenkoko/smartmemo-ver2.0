@@ -114,8 +114,9 @@ def register(request):
     if request.method == "POST":
         form = RegisterForm(request.POST)
 
+        #入力された値が正しいか、文字数と未入力がないか。従っているかを調べる
         if form.is_valid():
-            form.save()
+            form.save() # 認証が済んだ安全なデータをＤＢに新しく書き込む。
 
             return redirect("login")
         
