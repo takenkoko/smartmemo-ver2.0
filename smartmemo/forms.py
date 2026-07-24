@@ -8,6 +8,11 @@ from django.contrib.auth.models import User
 #==========================
 class RegisterForm(UserCreationForm):#新しくユーザーを作るためのフォーム
 
+    error_messages = {
+        "password_mismatch":"入力したパスワードが一致しません。",
+
+    }
+    
     def __init__(self,*args,**kwargs):
         super().__init__(*args,**kwargs)
 
@@ -36,14 +41,9 @@ class RegisterForm(UserCreationForm):#新しくユーザーを作るためのフ
 
         self.fields["password1"].help_text = "パスワードは、8文字以上で、他の個人情報と異なるパスワードを設定してください。"
 
-
         self.fields["password2"].help_text = "確認のため、もう一度同じパスワードを入力してください。"
         
-
-        self.fields["password2"].error_messages = {
-            "password_mismatch":"入力したパスワードが一致しません。",
-        }
-
+       
 
     class Meta:
         model = User

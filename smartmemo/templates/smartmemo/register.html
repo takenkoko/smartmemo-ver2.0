@@ -46,9 +46,9 @@
                           <!--パスワード再確認-->
 
                         <div class="mb-3">
-                            <table class="form-label">
+                            <label class="form-label">
                                 {{ form.password2.label}}
-                            </table>
+                            </label>
 
                             {{ form.password2 }}
 
@@ -56,7 +56,12 @@
                                 {{ form.password2.help_text}}
                             </small>
 
-                            {{ form.password2.errors}}
+                            <!--再入力したパスワードが異なるときに表示-->
+                            {% for error in form.password2.errors %}
+                            <div class="alert alert-danger mt-2">
+                                ⚠️ {{ error }}
+                            </div>
+                            {% endfor%}
                         </div>
 
                         <!--ボタン-->
